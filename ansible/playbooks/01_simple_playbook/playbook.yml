@@ -1,0 +1,16 @@
+---
+  - hosts: self
+    become: true
+    ignore_errors: true
+    tasks:
+      - name: Installing git package
+        apt:
+          package: git
+          state: present
+          update_cache: yes
+
+      - name: Installing tree package
+        apt:
+          package: tree
+          state: present
+          update_cache: yes
