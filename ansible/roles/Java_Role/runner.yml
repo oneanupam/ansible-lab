@@ -1,6 +1,0 @@
----
-  - hosts: production
-    gather_facts: true
-    become: true
-    roles:
-      - ansible-java
